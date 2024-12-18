@@ -77,7 +77,7 @@ const Navigate = [
             subTitle: "Run a node",
             icon: `${Technology}`,
             alt: 'Technology',
-            link: null
+            link: '/node' 
         },
 
         {
@@ -85,7 +85,7 @@ const Navigate = [
             subTitle: "Events",
             icon: `${Documentation}`,
             alt: 'Documentation',
-            link: null
+            link: '/events' 
         },
 
         {
@@ -93,7 +93,7 @@ const Navigate = [
             subTitle: "Social",
             icon: `${Forum}`,
             alt: 'Social',
-            link: null
+            link: '/social'
         },
         ]
     }, 

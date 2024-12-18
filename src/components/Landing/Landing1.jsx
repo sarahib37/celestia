@@ -29,7 +29,7 @@ const Container = styled.div`
       min-height: 100vh;
     }
   }
-`;
+`
 
 const Title = styled.h1`
   font-family: "Ruberoid";
@@ -69,7 +69,7 @@ const Title = styled.h1`
   @media (min-width: 1400px) {
     font-size: 5.5em;
   }
-`;
+`
 
 const SubTitle = styled.p`
   font-family: "Ruberoid";
@@ -95,7 +95,7 @@ const SubTitle = styled.p`
     font-size: 1.6em;
     padding: 2em 6em;
   }
-`;
+`
 
 const Buttons = styled.div`
   display: flex;
@@ -103,7 +103,7 @@ const Buttons = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 6em;
-`;
+`
 
 const Button = styled.button`
   border-radius: 8px;
@@ -135,7 +135,7 @@ const Button = styled.button`
     width: auto;
     padding: 0.9em 1.5em;
   }
-`;
+`
 
 function Landing1({ handleButton }) {
   return (
