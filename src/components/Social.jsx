@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import SocialBG from '../assets/CommunityBG.webp'
 import Social1 from './Social/Social1'
@@ -42,7 +42,11 @@ const Container = styled.section`
 `
 
 function Social() {
-  return (
+    useEffect(() => {
+        window.scroll(0,0)
+      })
+  
+    return (
     <Container>
         <Social1/>
         <Social2/>

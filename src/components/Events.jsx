@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Events1 from './Events/Events1'
 import Events2 from './Events/Events2'
@@ -21,7 +21,11 @@ const Container = styled.section`
 `
 
 
-function Events() {
+function Events(){
+  useEffect(() => {
+    window.scroll(0,0)
+  })
+
   return (
     <Container>
         <Events1/>

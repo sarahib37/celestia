@@ -10,6 +10,10 @@ import styled from 'styled-components'
 import RunNode from './components/NodeRun'
 import Events from './components/Events'
 import Social from './components/Social'
+import Terms from './components/Terms'
+import Privacy from './components/Privacy'
+import Careers from './components/Careers'
+import Technology from './components/Technology'
 
 const Container = styled(Router)`
   min-width: 100vw;
@@ -34,6 +38,10 @@ function App() {
         <Route path='/node' element={<RunNode/>}/>
         <Route path='/events' element={<Events/>}/>
         <Route path='/social' element={<Social/>}/>
+        <Route path='/tos' element={<Terms/>}/>
+        <Route path='/privacy' element={<Privacy/>}/>
+        <Route path='/careers' element={<Careers/>}/>
+        <Route path='/technology' element={<Technology/>}/>
       </Routes>
       
       <Footer/>

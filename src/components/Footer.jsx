@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import ReCAPTCHA from 'react-google-recaptcha';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Container = styled.footer`
     margin-top: -25em;
@@ -149,6 +150,7 @@ const SubContainer = styled.p`
     line-height: 12px;
     flex-wrap: no-wrap;
     white-space: no-wrap;
+    text-decoration: none;
 `
 
 const FlexContainer = styled.div`
@@ -222,15 +224,17 @@ function Footer() {
                 </div>
                 <div>
                     <LowerTitle>Resources</LowerTitle>
-                    {['Technology', 'Glossary', 'Blog', 'Podcast', 'Resources'].map((list) => {
+                    {['Press', 'Glossary', 'Blog', 'Podcast', 'Resources'].map((list) => {
                         return(<SubContainer>{list}</SubContainer>)
                     })}
                 </div>
                 <div>
                     <LowerTitle>Misc</LowerTitle>
-                    {['Brand', 'Press', 'Careers', 'Terms of Service', 'Privacy Policy'].map((list) => {
-                        return(<SubContainer>{list}</SubContainer>)
-                    })}
+                    <SubContainer>Brand</SubContainer>
+                    <Link to='/technology'><SubContainer>Technology</SubContainer></Link>
+                    <Link to='/careers'><SubContainer>Careers</SubContainer></Link>
+                    <Link to='/tos'><SubContainer>Terms of Service</SubContainer></Link>
+                    <Link to='/privacy'><SubContainer>Privacy Policy</SubContainer></Link>
                 </div>
                 <div>
                     <LowerTitle>Follow us</LowerTitle>
